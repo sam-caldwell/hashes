@@ -8,7 +8,7 @@ func TestSha512_HashString(t *testing.T) {
 
 	t.Run("Test String() Happy", func(t *testing.T) {
 		const testInput = "This is my test.  There is no test like my test."
-		const expected = "6e5d6a1041fe8a13fe5f8062e1c8d2741d71aae225b46c2efc539230f2113d25"
+		const expected = "a7096bad62963e64706aebbbf0558d4435373a5a98ee58200f29674938ccff461403a1c76febb3ebb88eddbf642a04d65bf328f97d9fab807afc5d88088f1b75"
 		var hash Sha512
 		hash.HashString(testInput)
 		if actual := hash.String(); actual != expected {
